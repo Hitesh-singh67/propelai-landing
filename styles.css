@@ -1,6 +1,4 @@
-/* =============================================
-   NexusVault — Design System & Global Styles
-   ============================================= */
+
 
 :root {
     /* Core palette */
@@ -94,9 +92,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     transform: translateY(0);
 }
 
-/* =============================================
-   NAVBAR
-   ============================================= */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -1361,9 +1357,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     color: var(--cyan);
 }
 
-/* =============================================
-   PARTICLE STYLES
-   ============================================= */
+
 .floating-particle {
     position: absolute;
     border-radius: 50%;
