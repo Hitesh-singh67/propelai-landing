@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropelAI — AI-Secured Fractional Real Estate</title>
+    <meta name="description" content="PropelAI combines cutting-edge AI geofencing security with fractional digital real estate investment. Secure, transparent, and accessible premium property investing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="url(#logoGrad)" stroke-width="2" fill="none"/>
+                        <path d="M16 8L22 11.5V18.5L16 22L10 18.5V11.5L16 8Z" fill="url(#logoGrad2)" opacity="0.6"/>
+                        <path d="M16 12L19 13.75V17.25L16 19L13 17.25V13.75L16 12Z" fill="url(#logoGrad3)"/>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="4" y1="2" x2="28" y2="30"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+                            <linearGradient id="logoGrad2" x1="10" y1="8" x2="22" y2="22"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+                            <linearGradient id="logoGrad3" x1="13" y1="12" x2="19" y2="19"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#f0f0ff"/></linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span>PropelAI</span>
+            </a>
+            <div class="nav-links">
+                <a href="#security" class="nav-link">AI Security</a>
+                <a href="#dashboard" class="nav-link">Investment</a>
+                <a href="#cta" class="nav-link">Join Beta</a>
+            </div>
+            <a href="#cta" class="nav-cta-btn">Get Early Access</a>
+            <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#security" class="mobile-link">AI Security</a>
+            <a href="#dashboard" class="mobile-link">Investment</a>
+            <a href="#cta" class="mobile-link mobile-cta-btn">Get Early Access</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div id="three-canvas-container" class="three-canvas-container"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grid-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Now in Private Beta
+            </div>
+            <h1 class="hero-title reveal-up" style="--delay: 0.15s">
+                Secure & Invest in<br>
+                <span class="gradient-text">Premium Real Estate</span>
+            </h1>
+            <p class="hero-subtitle reveal-up" style="--delay: 0.3s">
+                AI-powered geofencing security meets fractional digital ownership. 
+                Monitor, protect, and invest in commercial properties — all from a single intelligent platform.
+            </p>
+            <div class="hero-actions reveal-up" style="--delay: 0.45s">
+                <a href="#cta" class="btn-primary">
+                    <span>Start Investing</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#security" class="btn-secondary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <span>See How It Works</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal-up" style="--delay: 0.6s">
+                <div class="stat-item">
+                    <span class="stat-value" data-count="2400">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Properties Secured</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">$<span data-count="180">0</span>M</span>
+                    <span class="stat-label">Assets Under Protection</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value"><span data-count="99">0</span>.<span data-count="97" data-pad="2">0</span>%</span>
+                    <span class="stat-label">Threat Detection Rate</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- AI Security Section -->
+    <section id="security" class="security-section">
+        <div id="particles-container" class="particles-container"></div>
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">AI-POWERED PROTECTION</span>
+                <h2 class="section-title">Intelligent Geofencing<br><span class="gradient-text">Security Platform</span></h2>
+                <p class="section-desc">Our proprietary AI continuously monitors property perimeters with adaptive threat intelligence, anomaly detection, and real-time geospatial analysis.</p>
+            </div>
+
+            <div class="security-grid">
+                <div class="security-card reveal-up" style="--delay: 0s">
+                    <div class="card-icon cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3>Adaptive Perimeter AI</h3>
+                    <p>Neural networks analyze movement patterns across geofenced zones, distinguishing threats from normal activity with 99.97% accuracy.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">0.3ms</span>
+                        <span class="metric-label">Response Time</span>
+                    </div>
+                </div>
+
+                <div class="security-card reveal-up" style="--delay: 0.12s">
+                    <div class="card-icon purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <h3>Real-Time Threat Map</h3>
+                    <p>Live 3D geospatial visualization of all secured properties with multi-layer threat overlays and predictive incident mapping.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">Live Monitoring</span>
+                    </div>
+                </div>
+
+                <div class="security-card reveal-up" style="--delay: 0.24s">
+                    <div class="card-icon pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Blockchain Audit Trail</h3>
+                    <p>Every security event is cryptographically recorded on an immutable ledger, ensuring full transparency for all stakeholders.</p>
+                    <div class="card-metric">
+                        <span class="metric-value">100%</span>
+                        <span class="metric-label">Tamper-Proof</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Security Visualization -->
+            <div class="security-visual reveal-up" style="--delay: 0.1s">
+                <div class="visual-screen">
+                    <div class="screen-header">
+                        <div class="screen-dots"><span></span><span></span><span></span></div>
+                        <span class="screen-title">NEXUSVAULT SECURITY CONSOLE — LIVE</span>
+                        <div class="screen-status"><span class="status-dot"></span>OPERATIONAL</div>
+                    </div>
+                    <div class="screen-body">
+                        <div class="radar-container">
+                            <div class="radar-ring ring-1"></div>
+                            <div class="radar-ring ring-2"></div>
+                            <div class="radar-ring ring-3"></div>
+                            <div class="radar-sweep"></div>
+                            <div class="radar-dot dot-1"></div>
+                            <div class="radar-dot dot-2"></div>
+                            <div class="radar-dot dot-3"></div>
+                            <div class="radar-center"></div>
+                        </div>
+                        <div class="console-data">
+                            <div class="data-row">
+                                <span class="data-label">ZONE STATUS</span>
+                                <span class="data-value green">ALL CLEAR</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">ACTIVE ZONES</span>
+                                <span class="data-value">847</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">THREATS BLOCKED</span>
+                                <span class="data-value cyan">12,439</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">AI CONFIDENCE</span>
+                                <div class="confidence-bar"><div class="confidence-fill"></div></div>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">LAST SCAN</span>
+                                <span class="data-value blink">0.2s ago</span>
+                            </div>
+                            <div class="log-feed">
+                                <div class="log-entry">[<span class="t-cyan">INFO</span>] Perimeter scan complete — Zone 7A</div>
+                                <div class="log-entry">[<span class="t-green">OK</span>] Identity verified — Gate B4</div>
+                                <div class="log-entry">[<span class="t-cyan">INFO</span>] Anomaly check cleared — Sector 12</div>
+                                <div class="log-entry">[<span class="t-yellow">WARN</span>] Movement detected — Zone 3C ▸ Resolved</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="section-container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">FRACTIONAL OWNERSHIP</span>
+                <h2 class="section-title">Your Digital Property<br><span class="gradient-text">Investment Dashboard</span></h2>
+                <p class="section-desc">Access institutional-grade real estate investments starting from $100. AI-verified properties with built-in security scoring and transparent yield tracking.</p>
+            </div>
+
+            <div class="dashboard-showcase reveal-up" style="--delay: 0.1s">
+                <div class="dash-panel">
+                    <!-- Portfolio Overview -->
+                    <div class="dash-sidebar">
+                        <div class="portfolio-header">
+                            <span class="port-label">Portfolio Value</span>
+                            <span class="port-value">$247,850</span>
+                            <span class="port-change positive">+12.4% ▲</span>
+                        </div>
+                        <div class="portfolio-chart">
+                            <svg viewBox="0 0 200 80" class="mini-chart">
+                                <defs>
+                                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
+                                        <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0 60 Q20 55 40 50 T80 35 T120 25 T160 20 T200 10" stroke="#00f0ff" stroke-width="2" fill="none" class="chart-line"/>
+                                <path d="M0 60 Q20 55 40 50 T80 35 T120 25 T160 20 T200 10 V80 H0Z" fill="url(#chartGrad)" class="chart-area"/>
+                            </svg>
+                        </div>
+                        <div class="asset-list">
+                            <div class="asset-item">
+                                <div class="asset-icon a1">🏢</div>
+                                <div class="asset-info">
+                                    <span class="asset-name">Nexus Tower — NYC</span>
+                                    <span class="asset-shares">450 shares</span>
+                                </div>
+                                <div class="asset-yield">8.2% <span>APY</span></div>
+                            </div>
+                            <div class="asset-item">
+                                <div class="asset-icon a2">🏗️</div>
+                                <div class="asset-info">
+                                    <span class="asset-name">Vertex Plaza — LA</span>
+                                    <span class="asset-shares">280 shares</span>
+                                </div>
+                                <div class="asset-yield">7.5% <span>APY</span></div>
+                            </div>
+                            <div class="asset-item">
+                                <div class="asset-icon a3">🏬</div>
+                                <div class="asset-info">
+                                    <span class="asset-name">Prism Complex — MIA</span>
+                                    <span class="asset-shares">620 shares</span>
+                                </div>
+                                <div class="asset-yield">9.1% <span>APY</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Detail -->
+                    <div class="dash-main">
+                        <div class="property-header">
+                            <div>
+                                <h3 class="property-name">Nexus Tower — Financial District</h3>
+                                <p class="property-loc">📍 Manhattan, New York City</p>
+                            </div>
+                            <div class="security-score">
+                                <svg viewBox="0 0 36 36" class="score-ring">
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="3"/>
+                                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="url(#scoreGrad)" stroke-width="3" stroke-dasharray="96, 100" class="score-path"/>
+                                    <defs><linearGradient id="scoreGrad"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+                                </svg>
+                                <div class="score-text">
+                                    <span class="score-num">96</span>
+                                    <span class="score-label">Security<br>Score</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="property-stats">
+                            <div class="p-stat">
+                                <span class="p-stat-val">$12.5M</span>
+                                <span class="p-stat-label">Valuation</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-val">8.2%</span>
+                                <span class="p-stat-label">Annual Yield</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-val">2,400</span>
+                                <span class="p-stat-label">Total Shares</span>
+                            </div>
+                            <div class="p-stat">
+                                <span class="p-stat-val">87%</span>
+                                <span class="p-stat-label">Occupancy</span>
+                            </div>
+                        </div>
+
+                        <div class="property-timeline">
+                            <div class="tl-header">
+                                <span>Security & Activity Timeline</span>
+                                <span class="tl-live"><span class="status-dot"></span>Live</span>
+                            </div>
+                            <div class="tl-entries">
+                                <div class="tl-entry">
+                                    <div class="tl-time">2 min ago</div>
+                                    <div class="tl-dot green"></div>
+                                    <div class="tl-text">Perimeter scan completed — All zones clear</div>
+                                </div>
+                                <div class="tl-entry">
+                                    <div class="tl-time">15 min ago</div>
+                                    <div class="tl-dot cyan"></div>
+                                    <div class="tl-text">Dividend distribution processed — $0.42/share</div>
+                                </div>
+                                <div class="tl-entry">
+                                    <div class="tl-time">1 hr ago</div>
+                                    <div class="tl-dot purple"></div>
+                                    <div class="tl-text">New tenant access credentials verified via AI</div>
+                                </div>
+                                <div class="tl-entry">
+                                    <div class="tl-time">3 hr ago</div>
+                                    <div class="tl-dot green"></div>
+                                    <div class="tl-text">Monthly security audit — Score: 96/100</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="invest-btn">
+                            <span>Invest in This Property</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="cta-glow"></div>
+        <div class="section-container">
+            <div class="cta-content reveal-up">
+                <span class="section-tag">EARLY ACCESS</span>
+                <h2 class="cta-title">Join the Investor Beta</h2>
+                <p class="cta-desc">Be among the first to access AI-secured fractional real estate. Limited beta spots available for qualifying investors.</p>
+                <form id="betaForm" class="cta-form" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" placeholder="Enter your email address" required autocomplete="email">
+                            <button type="submit" id="submitBtn" class="submit-btn">
+                                <span>Request Access</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="form-note">🔒 No spam. No credit card required. Early investors receive priority allocation.</p>
+                </form>
+
+                <div class="trust-badges">
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <span>SOC 2 Certified</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        <span>Bank-Level Encryption</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>SEC Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 32 32" fill="none"><path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="url(#fLogoG)" stroke-width="2" fill="none"/><path d="M16 8L22 11.5V18.5L16 22L10 18.5V11.5L16 8Z" fill="url(#fLogoG2)" opacity="0.6"/><defs><linearGradient id="fLogoG" x1="4" y1="2" x2="28" y2="30"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient><linearGradient id="fLogoG2" x1="10" y1="8" x2="22" y2="22"><stop stop-color="#00f0ff"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs></svg>
+                        </div>
+                        <span>NexusVault</span>
+                    </div>
+                    <p class="footer-tagline">AI-secured fractional real estate for the next generation of investors.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <a href="#">AI Security</a>
+                        <a href="#">Investments</a>
+                        <a href="#">Dashboard</a>
+                        <a href="#">API Docs</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Compliance</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 NexusVault. All rights reserved.</span>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="GitHub">⊡</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
