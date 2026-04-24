@@ -1,9 +1,4 @@
-/* =============================================
-   NexusVault — Interactive JavaScript
-   Three.js 3D Building, Particles, Scroll FX
-   ============================================= */
 
-// ---- Three.js Scene: Futuristic Building ----
 (function initThreeScene() {
     const container = document.getElementById('three-canvas-container');
     if (!container) return;
